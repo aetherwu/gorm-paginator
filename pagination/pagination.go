@@ -85,7 +85,7 @@ func Paging(p *Param, result interface{}) *Paginator {
 }
 
 // Paging for scanning struct 分页
-func ScanPaging(p *Param, result interface{}) *Paginator {
+func PagingToScan(p *Param, result interface{}) *Paginator {
 	db := p.DB
 
 	if p.ShowSQL {
